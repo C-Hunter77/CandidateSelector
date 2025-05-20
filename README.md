@@ -1,33 +1,43 @@
-# React + TypeScript + Vite
+# Candidate Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, single-page application built with **React** and **TypeScript** that helps employers browse, accept, and manage potential candidates using the GitHub API. Candidate preferences are saved locally to persist across sessions.
 
-Currently, two official plugins are available:
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+##  GitHub Repository
 
-* Configure the top-level `parserOptions` property as follows:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+ [View the Source Code on GitHub](https://github.com/C-Hunter77/CandidateSelector)
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## Features
+
+- Fetches real candidate profiles from the **GitHub REST API**
+- Displays name, username, location, email, company, avatar, and GitHub profile link
+- Accept (`+`) or reject (`-`) candidates in a swipe-like flow
+- Saves accepted candidates to **localStorage**
+- Dedicated **Saved Candidates** page
+- Clear user feedback when no more candidates are available
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- GitHub REST API
+- CSS Modules
+- LocalStorage
+- Render (deployment)
+
+---
+
+## Getting Started
+
+To run the project locally:
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/C-Hunter77/CandidateSelector.git
+   cd CandidateSelector
